@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: aqua;
+        }
+        form {
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+      }input, select, textarea {
+            width: 100%;
+            margin-top: 5px;
+      }button {margin-top: 15px;}
+    </style>
+</head>
+<body>
+<header>
+    <h2>Student Feedback Form</h2>
+</header>
+<main>
+    <form>
+        <label>
+            Name:
+            <input type="text" required>
+        </label>
+	<label>
+            Email:
+            <input type="email" required>
+        </label>
+        <label>
+            Department:
+            <select required>
+                <option value="">Select</option>
+                <option>Computer Science</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+            </select>
+        </label>
+        <label>
+            Rating:
+            <input type="radio" name="rating" required> Excellent
+            <input type="radio" name="rating"> Good
+            <input type="radio" name="rating"> Average
+        </label>
+        <label>
+            Suggestions:
+            <textarea rows="4"></textarea>
+        </label>
+	 <button type="submit">Submit</button>
+    </form>
+</main>
+<footer>
+    <p>Thank you for your feedback.</p>
+</footer>
+</body>
+</html>

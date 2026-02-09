@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>HTML Form with CSS</title>
+ <style>
+    body {
+ font-family: Arial, sans-serif;
+ background-color: yellow;
+ }
+ 
+ h2 {
+ text-align: center;
+ color: #333;
+ }
+ form {
+width: 350px;
+margin:auto;
+background-color: #ffffff;
+ padding: 20px;
+ border-radius: 5px;
+ border: 5px solid #3498db;
+ }
+ label {
+ font-weight: bold;
+ }
+ input, select, textarea {
+ width: 90%;
+ padding: 5px;
+ margin-top: 10px;
+ margin-bottom: 20px;
+ border: 5px solid #ccc;
+ border-radius: 15px;
+ }
+ input[type="radio"],
+ input[type="checkbox"] {
+ width: auto;
+ margin-right: 5px;
+ }
+ .btn {
+ width: 49%;
+ padding: 10px;
+ border: 10px;
+ border-radius: 10px;
+ cursor: pointer;
+ font-weight: bold;
+ }
+ .submit-btn {
+ background-color: blue;
+ color: white;
+ }
+ .reset-btn {
+ background-color: #e74c3c;
+ color: white;
+ }
+ </style>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+<form>
+ <label>Full Name:</label>
+ <input type="text" name="name">
+ <label>Email:</label>
+ <input type="email" name="email">
+ <label>Password:</label>
+ <input type="password" name="password">
+ <label>Gender:</label><br>
+ <input type="radio" name="gender"> Male
+ <input type="radio" name="gender"> Female
+ <br><br>
+ <label>Skills:</label><br>
+ <input type="checkbox"> HTML
+ <input type="checkbox"> CSS
+ <input type="checkbox"> JavaScript
+ <br><br>
+ <label>Course:</label>
+ <select>
+ <option>Web Development</option>
+ <option>Data Science</option>
+ <option>AI & ML</option>
+ </select>
+ <label>Address:</label>
+ <textarea rows="4"></textarea>
+ <input type="submit" value="Register" class="btn submit-btn">
+ <input type="reset" value="Clear" class="btn reset-btn">
+</form>
+</body>
+</html>

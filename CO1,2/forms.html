@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: yellowgreen;
+    }
+    h2{
+        text-align:center;
+        color:blue
+    }
+    form{
+        width:400px;
+        padding:50px ;
+        margin:auto;
+        background-color: yellow;
+        border:5px solid orange;
+        border-radius: 10px;
+
+    }
+    label{
+        font-weight: bold;
+    }
+input, select {
+ width: 90%;
+ padding: 5px;
+ margin-top: 10px;
+ margin-bottom: 20px;
+ border: 5px solid #ccc;
+ border-radius: 15px;
+ }
+ input[type="radio"],input[type="checkbox"]{
+    width:10px;
+ }
+
+</style>
+
+
+
+
+
+
+
+
+
+    </head>
+    <body>
+        <h2>Student registration form</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="Username" required>
+            <br><br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="PASSWORD" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="EMAIL" required>
+            <br><br>
+            <label for="gender">Gender</label>
+            <br><br>
+            <input type="radio" id="gender" name="Gender" required>Male
+            <input type="radio" id="gender" name="Gender" required>Male
+            <br><br>
+            <label>Skills</label>
+            <br><br>
+            <input type="checkbox" name="skills">HTML 
+            <input type="checkbox" name="skills">JAVA
+            <input type="checkbox" name="skills">C
+            <br><br>
+            <label>Course</label>
+            <br><br>
+            <select>
+                <option>Sunrisers Hyderabad</option>Sunrisers Hyderabad
+                <option>Chennai Super Kings</option>Chennai Super Kings
+                <option>Mumbai Indians</option>Mumbai Indians
+            </select>
+        </form>
+    </body>
+</html>
