@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    padding: 25px 20px;   
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;          
+    border-radius: 20px;   
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+
+header h1 {
+    font-size: 36px;
+    color: #1e3a8a;
+    margin: 10px 0;  
+}
+
+
+.content {
+    max-width: 850px;
+    margin: 20px auto;   
+    padding: 28px;       
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
+
+.content:hover {
+    transform: scale(1.02);
+}
+
+
+.content h2,
+.certificates h2,
+.education h2 {
+    border-bottom: 3px solid #1e3a8a;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 15px;   
+}
+
+
+.certificates {
+    text-align: center;
+    padding: 30px 20px;   
+}
+
+.certificate-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;   
+}
+
+.certificate-card {
+    background: white;
+    padding: 25px;   
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.1);
+    transition: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: scale(1.03);
+}
+
+.certificate-card img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+
+.education {
+    text-align: center;
+    padding: 35px 20px;  
+    background: linear-gradient(180deg,#f3f6fb,#eef2ff);
+}
+
+.education-grid {
+    max-width: 950px;
+    margin: 20px auto;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;   
+}
+
+.edu-box {
+    background: white;
+    padding: 22px;   
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
+
+.edu-box:hover {
+    transform: scale(1.03);
+}
+
+.edu-tag {
+    background: #1e3a8a;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* BUTTONS */
+.content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;   /* reduced */
+    padding: 0;
+}
+
+button {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 8px 22px;   
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+footer {
+    background: aliceblue;
+    padding: 20px;   
+    text-align: center;
+    margin-top: 20px;   
+}
